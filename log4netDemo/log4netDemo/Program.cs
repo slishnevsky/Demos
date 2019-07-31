@@ -7,7 +7,7 @@ using log4net;
 
 [assembly: log4net.Config.XmlConfigurator]
 
-namespace log4netDemo
+namespace Log4netDemo
 {
     class Program
     {
