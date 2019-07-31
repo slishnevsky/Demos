@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">{{title}}</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="alert alert-danger">
+    <h2>AngularPWADemo</h2>
+    <div>Sample project for demonstrating capabilities of Progressive Web App, such as automatic updates, offline
+      functionality and push notifications, based on Push API and Web Push Protocol in ASP.NET Core powered Angular
+      application.</div>
+    <hr />
+    <div class="btn-toolbar">
+      <button [class]="subscription == null ? 'btn btn-success' : 'btn btn-danger'"
+        (click)="subscription == null ? subscribe() : unsubscribe()">{{ subscription == null ? 'Subscribe' : 'Unsubscribe' }}</button>
+      <button class="btn btn-primary" (click)="broadcast()">Broadcast</button>
+    </div>
+    <pre>subscription {{ subscription | json }}</pre>
+  </div>
+  <router-outlet></router-outlet>
+</div>

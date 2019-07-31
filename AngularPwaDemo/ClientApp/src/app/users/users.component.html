@@ -1,0 +1,11 @@
+<div *ngIf="users">
+  <h3>Users <small>- click on any user to see his posts</small></h3>
+  <a *ngFor="let user of users" routerLink="/users/{{user.id}}/posts">
+    <div class="alert alert-primary">
+      <h4>{{ user.name }}</h4>
+      <p>Email: {{ user.email }}</p>
+      <p>Phone: {{ user.phone }}</p>
+      <p>Website: {{ user.website }}</p>
+    </div>
+  </a>
+</div>

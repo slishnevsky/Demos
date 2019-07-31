@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="NHibernateDemo" namespace="NHibernateDemo.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Visitor" table="Visitor" lazy="true" >
+    <id name="VisitorId" column="VisitorId" />
+    <!--<many-to-one name="Visit">
+      <column name="VisitId" sql-type="int" not-null="true" />
+    </many-to-one>
+    <many-to-one name="Employee">
+      <column name="EmployeeIdCheckedInBy" sql-type="int" not-null="true" />
+    </many-to-one>
+    <many-to-one name="Employee">
+      <column name="EmployeeIdCheckedOutBy" sql-type="int" not-null="true" />
+    </many-to-one>
+    <many-to-one name="Employee">
+      <column name="EmployeeIdBadgePrintedBy" sql-type="int" not-null="true" />
+    </many-to-one>
+    <many-to-one name="Employee">
+      <column name="EmployeeIdUpdatedBy" sql-type="int" not-null="true" />
+    </many-to-one>
+    <many-to-one name="Contact">
+      <column name="ContactIdUpdatedBy" sql-type="int" not-null="true" />
+    </many-to-one>-->
+    <property name="IsPrimaryVisitor">
+      <column name="IsPrimaryVisitor" sql-type="int" not-null="true" />
+    </property>
+    <property name="VisitorCompany">
+      <column name="VisitorCompany" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="DateCreated">
+      <column name="DateCreated" sql-type="datetime" not-null="true" />
+    </property>
+    <property name="DateCheckedIn">
+      <column name="DateCheckedIn" sql-type="smalldatetime" not-null="true" />
+    </property>
+    <property name="DateCheckedOut">
+      <column name="DateCheckedOut" sql-type="smalldatetime" not-null="true" />
+    </property>
+    <property name="DateBadgePrinted">
+      <column name="DateBadgePrinted" sql-type="smalldatetime" not-null="true" />
+    </property>
+    <property name="TmpVisitorId">
+      <column name="tmpVisitorId" sql-type="int" not-null="true" />
+    </property>
+    <property name="RestrictionType">
+      <column name="RestrictionType" sql-type="int" not-null="true" />
+    </property>
+    <property name="Picture">
+      <column name="Picture" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="RestrictionNotes">
+      <column name="RestrictionNotes" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="SecuritySystemVisitorId">
+      <column name="SecuritySystemVisitorID" sql-type="nvarchar" not-null="true" />
+    </property>
+    <property name="SecuritySystemBarCode">
+      <column name="SecuritySystemBarCode" sql-type="nvarchar" not-null="true" />
+    </property>
+    <property name="PhotoLength">
+      <column name="PhotoLength" sql-type="int" not-null="true" />
+    </property>
+    <property name="PhotoData">
+      <column name="PhotoData" sql-type="image" not-null="false" />
+    </property>
+    <property name="VisitorEmail">
+      <column name="VisitorEmail" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="Pin">
+      <column name="Pin" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="CheckInSource">
+      <column name="CheckInSource" sql-type="int" not-null="true" />
+    </property>
+    <property name="VisitorFirstName">
+      <column name="VisitorFirstName" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="VisitorLastName">
+      <column name="VisitorLastName" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="VisitorName">
+      <column name="VisitorName" sql-type="varchar" not-null="true" />
+    </property>
+    <property name="SecuritySystemVisitId">
+      <column name="SecuritySystemVisitID" sql-type="nvarchar" not-null="true" />
+    </property>
+    <property name="AngusIntegrationVisitorId">
+      <column name="AngusIntegrationVisitorId" sql-type="int" not-null="true" />
+    </property>
+    <property name="IsSyncFromIntegration">
+      <column name="IsSyncFromIntegration" sql-type="int" not-null="true" />
+    </property>
+    <property name="VisitorCsCompanyId">
+      <column name="Visitor_CS_CompanyId" sql-type="int" not-null="true" />
+    </property>
+    <property name="VisitorType">
+      <column name="VisitorType" sql-type="int" not-null="true" />
+    </property>
+    <property name="DateUpdated">
+      <column name="DateUpdated" sql-type="datetime" not-null="true" />
+    </property>
+  </class>
+</hibernate-mapping>

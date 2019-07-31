@@ -1,0 +1,93 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/index.html",
+        "/main.2b91bffe1dd662143d40.js",
+        "/polyfills.7a0e6866a34e280f48e7.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.ed479caca14ad4cd5b27.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/weather.jpg",
+        "/glyphicons-halflings-regular.448c34a56d699c29117a.woff2",
+        "/glyphicons-halflings-regular.89889688147bd7575d63.svg",
+        "/glyphicons-halflings-regular.e18bbf611f2a2e43afc0.ttf",
+        "/glyphicons-halflings-regular.f4769f9bdb7466be6508.eot",
+        "/glyphicons-halflings-regular.fa2772327f55d8198301.woff"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api",
+      "patterns": [
+        "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 60000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/weather.jpg": "d74c83c59a09ad7490b42633fc2855e15cd13766",
+    "/glyphicons-halflings-regular.448c34a56d699c29117a.woff2": "ca35b697d99cae4d1b60f2d60fcd37771987eb07",
+    "/glyphicons-halflings-regular.89889688147bd7575d63.svg": "de51a8494180a6db074af2dee2383f0a363c5b08",
+    "/glyphicons-halflings-regular.e18bbf611f2a2e43afc0.ttf": "44bc1850f570972267b169ae18f1cb06b611ffa2",
+    "/glyphicons-halflings-regular.f4769f9bdb7466be6508.eot": "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3",
+    "/glyphicons-halflings-regular.fa2772327f55d8198301.woff": "278e49a86e634da6f2a02f3b47dd9d2a8f26210f",
+    "/index.html": "04896c55065ba92e76ad7c4f972f108b1d82642b",
+    "/main.2b91bffe1dd662143d40.js": "b63371a0d9a369e9188f78aa06eceb53d687553b",
+    "/polyfills.7a0e6866a34e280f48e7.js": "9f0b8341c0a0caec1581da2f255eb5dbb8e12303",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.ed479caca14ad4cd5b27.css": "e1fda835a66cf553e4739fe142b6b677c98eae6c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

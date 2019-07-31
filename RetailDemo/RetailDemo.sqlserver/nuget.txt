@@ -1,0 +1,16 @@
+
+
+Install-Package NServiceBus.Transport.SqlServer -ProjectName Billing
+Install-Package NServiceBus.Transport.SqlServer -ProjectName ClientUI
+Install-Package NServiceBus.Transport.SqlServer -ProjectName Sales
+Install-Package NServiceBus.Transport.SqlServer -ProjectName Shipping
+
+Install-Package NServiceBus.Persistence.Sql -ProjectName Billing
+Install-Package NServiceBus.Persistence.Sql -ProjectName ClientUI
+Install-Package NServiceBus.Persistence.Sql -ProjectName Sales
+Install-Package NServiceBus.Persistence.Sql -ProjectName Shipping
+
+Install-Package NServiceBus.Persistence.Sql.MsBuild -ProjectName Billing
+Install-Package NServiceBus.Persistence.Sql.MsBuild -ProjectName ClientUI
+Install-Package NServiceBus.Persistence.Sql.MsBuild -ProjectName Sales
+Install-Package NServiceBus.Persistence.Sql.MsBuild -ProjectName Shipping

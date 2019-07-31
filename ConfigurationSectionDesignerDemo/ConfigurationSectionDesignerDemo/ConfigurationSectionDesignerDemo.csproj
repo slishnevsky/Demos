@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DA0BD93-CF3C-451C-9AA2-C16D017B1CD4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AngusAnyWhere.SecurityIntegration.Ccure.Listener</RootNamespace>
+    <AssemblyName>AngusAnyWhere.SecurityIntegration.Ccure.Listener</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AngusAnyWhere.SecurityIntegration">
+      <HintPath>..\lib\AngusAnyWhere.SecurityIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareHouse.CrossFire.Common.ClientInterfaceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29d9a13a73cd25e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SoftwareHouse.CrossFire.Common.ClientInterfaceLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareHouse.CrossFire.Common.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29d9a13a73cd25e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SoftwareHouse.CrossFire.Common.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareHouse.CrossFire.Common.DataServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29d9a13a73cd25e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SoftwareHouse.CrossFire.Common.DataServiceLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareHouse.CrossFire.Common.ObjectDefinitions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f6781c783a14ce73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SoftwareHouse.CrossFire.Common.ObjectDefinitions.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareHouse.NextGen.Common.SecurityObjectDefinitions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f6781c783a14ce73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SoftwareHouse.NextGen.Common.SecurityObjectDefinitions.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftwareHouse.NextGen.Common.SecurityObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f6781c783a14ce73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SoftwareHouse.NextGen.Common.SecurityObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationSectionDesigner1.csd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfigurationSectionDesigner1.csd</DependentUpon>
+    </Compile>
+    <Compile Include="CcureIntegrationService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConfigurationSectionDesigner1.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>ConfigurationSectionDesigner1.csd.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConfigurationSectionDesigner1.csd.config">
+      <DependentUpon>ConfigurationSectionDesigner1.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConfigurationSectionDesigner1.csd.diagram">
+      <DependentUpon>ConfigurationSectionDesigner1.csd</DependentUpon>
+    </None>
+    <None Include="ConfigurationSectionDesigner1.csd.xsd">
+      <DependentUpon>ConfigurationSectionDesigner1.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

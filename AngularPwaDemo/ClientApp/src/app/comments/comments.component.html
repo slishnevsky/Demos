@@ -1,0 +1,9 @@
+<div *ngIf="comments">
+  <h3>Comments <small>- click on app bannner to return</small></h3>
+  <div *ngFor="let comment of comments">
+    <div class="alert alert-primary">
+      <h4>{{ comment.name }}</h4>
+      <p>{{ comment.body }}</p>
+    </div>
+  </div>
+</div>

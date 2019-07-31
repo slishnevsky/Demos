@@ -1,0 +1,12 @@
+body { padding-top: 70px; background-color: #444; color: white; }
+a, a:hover { text-decoration: none; }
+hr { border-top-color: #FFF; }
+pre { background-color: #444; color: #FFF; border: 1px solid #FFF; margin: 10px 0 0 0; }
+small { color: #CCC !important; }
+input, input:focus, button, button:hover, button:active { border: 1px solid #FFF !important; outline: none !important; }
+.alert { color: #FFF; border: 1px solid #FFF; }
+.alert-primary { background-color: #337AB7; }
+.alert-success { background-color: #5CB85C; }
+.alert-info { background-color: #5BC0DE; }
+.alert-warning { background-color: #F0AD4E; }
+.alert-danger { background-color: #D9534F; }

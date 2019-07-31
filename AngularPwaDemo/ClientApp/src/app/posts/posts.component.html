@@ -1,0 +1,9 @@
+<div *ngIf="posts">
+  <h3>Posts <small>- click on any post to see its comments</small></h3>
+  <a *ngFor="let post of posts" routerLink="/posts/{{post.id}}/comments">
+    <div class="alert alert-primary">
+      <h4>{{ post.title }}</h4>
+      <p>{{ post.body }}</p>
+    </div>
+  </a>
+</div>
